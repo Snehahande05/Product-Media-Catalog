@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Media Catalog</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #EADDC1; /* Sand Whisper */
+      color: #2E1F27; /* Eclipse Dust text */
+    }
+
+    header, footer {
+      background-color: #2E1F27; /* Eclipse Dust */
+      color: #EADDC1; /* Sand Whisper text */
+      text-align: center;
+      padding: 20px;
+    }
+
+    nav {
+      background: #2E1F27; /* Eclipse Dust */
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #CAE7DF; /* Opaline Mist */
+      margin: 0 10px;
+      text-decoration: none;
+      padding: 10px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #A892D9; /* Mirage Lilac */
+      border-radius: 5px;
+      color: #2E1F27;
+    }
+
+    section {
+      padding: 20px;
+      background-color: #EADDC1; /* Sand Whisper */
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      color: #2E1F27;
+    }
+
+    .product-gallery {
+      display: flex;
+      gap: 80px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .product-gallery img {
+      width: 100%;
+      max-width: 250px;
+      border: 3px solid #C8A951; /* Sunken Gold */
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      border-radius: 8px;
+      border: 3px solid #C8A951; /* Sunken Gold */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #ffffff;
+    }
+
+    table caption {
+      caption-side: top;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2E1F27;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #C8A951; /* Sunken Gold */
+      text-align: center;
+    }
+
+    thead {
+      background-color: darkslateblue; /* Mirage Lilac */
+      color:lavender;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #F9F5EF;
+    }
+
+    tbody tr:hover {
+      background-color: #cdb1ea; /* Opaline Mist */
+      color: #2E1F27;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Product Media Catalog</h1>
+    <p>Explore our products through images, videos and tabular data</p>
+  </header>
+
+  <nav>
+    <a href="#">Products</a>
+    <a href="#">Media</a>
+    <a href="#">Specifications</a>
+  </nav>
+
+  <section>
+    <h2>Our Products</h2>
+    <div class="product-gallery">
+      <img src="https://m.media-amazon.com/images/I/51rW3mp1PoL.jpg" alt="Product Image">
+      <img src="https://img.tatacliq.com/images/i8/658Wx734H/MP000000015136088_658Wx734H_202211040114411.jpeg" alt="Product Image">
+      <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MUW33_AV3?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=Sk5mNVdNcjhJbUs0R1JIajlMTVBnVlZya2lKWlJmUEwrYndWOTJiVWJWQUYwVmtIbGRkS25RMVpBRlo0bk5DUW9odXUzN3kxdU5pZjFrUWErZ2llTVE" alt="Product Image">
+    </div>
+  </section>
+
+  <section>
+    <h2>Product Videos</h2>
+    <video width="400" controls>
+      <source src="/Users/snehahande/Downloads/Untitled design.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <section>
+    <h2>Product Specifications</h2>
+    <table>
+      <caption>Smart Watch Comparison</caption>
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Availability</th>
+          <th>Rating</th>
+          <th>Launch Date</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Smart Watch A</td>
+          <td>$109</td>
+          <td>In Stock</td>
+          <td>4.5*</td>
+          <td> March 2024</td>
+        </tr>
+
+        <tr>
+          <td>Fitness Band B</td>
+          <td>$99</td>
+          <td>Pre order</td>
+          <td>4.0*</td>
+          <td> July 2024</td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">Wireless Headphones C</td>
+          <td>$149</td>
+          <td>In stock</td>
+          <td>4.8*</td>
+          <td> May 2023</td>
+        </tr>
+
+        <tr>
+            <td colspan="4">Includes bonus carrying case and 2-year warranty.</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ITM University | Designed by students.</p>
+  </footer>
+
+</body>
+</html>
